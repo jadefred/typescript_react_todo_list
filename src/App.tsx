@@ -14,7 +14,10 @@ const App: FC = () => {
     setDeadline(Number(event.target.value));
   };
 
-
+  const addTask = (): void => {
+    const newTask = { taskName: task, deadline: deadline };
+    setTodoList([...todoList, newTask]);
+  };
 
   return (
     <div className="App">
