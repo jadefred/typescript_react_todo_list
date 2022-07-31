@@ -16,7 +16,13 @@ const App: FC = () => {
   };
 
   const addTask = (): void => {
-    const newTask = { taskName: task, deadline: deadline };
+    let modifiedDeadline: number;
+    if (deadline <= 0 || !deadline) {
+      modifiedDeadline = 0;
+    } else {
+      modifiedDeadline = deadline;
+    }
+    const newTask = { taskName: task, deadline: modifiedDeadline };
     setTodoList([...todoList, newTask]);
     setTask("");
     setDeadline(0);

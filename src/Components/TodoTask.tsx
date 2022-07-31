@@ -11,7 +11,10 @@ const TodoTask: FC<Props> = ({ task, completeTask }) => {
     <div className="task">
       <div className="content">
         <span>{task.taskName}</span>
-        <span>{task.deadline}</span>
+        <span>
+          {task.deadline}
+          {task.deadline > 1 ? ` days` : ` day`}
+        </span>
       </div>
       <button
         onClick={() => {

@@ -10,6 +10,7 @@
 body {
   margin: 0;
   padding: 0;
+  color: #213252;
 }
 
 .header {
@@ -35,6 +36,7 @@ body {
   padding-left: 10px;
   font-size: 17px;
   border: 1px solid gainsboro;
+  color: #213252;
 }
 
 .header button {
@@ -45,6 +47,7 @@ body {
   border-top-right-radius: 8px;
   padding-left: 10px;
   cursor: pointer;
+  color: #213252;
 }
 
 .todoList {
@@ -53,4 +56,29 @@ body {
   display: flex;
   padding-top: 50px;
   flex-direction: column;
+}
+
+.task {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.content {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.task button {
+  width: 70px;
+  border: 2px cornflowerblue solid;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+  color: #213252;
 }
