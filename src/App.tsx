@@ -16,6 +16,8 @@ const App: FC = () => {
   };
 
   const addTask = (): void => {
+    if (task === "") return;
+
     let modifiedDeadline: number;
     if (deadline <= 0 || !deadline) {
       modifiedDeadline = 0;
